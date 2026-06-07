@@ -8,7 +8,7 @@ The project demonstrates how Spring manages objects using the IoC (Inversion of 
 
 A simple user management flow is implemented using a layered architecture consisting of Controller, Service, Repository, and a simulated Database layer.
 
----
+
 
 ## Concepts Covered
 
@@ -24,7 +24,7 @@ A simple user management flow is implemented using a layered architecture consis
 * Bean Lifecycle (`initMethod`, `destroyMethod`)
 * Layered Architecture
 
----
+
 ## Project Structure
 
 ```text
@@ -55,7 +55,7 @@ src/main/java
 * **Configuration Layer** → Configures Spring beans and component scanning.
 
 
----
+
 
 ## Technologies Used
 
@@ -63,8 +63,6 @@ src/main/java
 * Spring Framework 7
 * Maven
 
-
----
 
 
 ## Sample Execution Flow
@@ -91,13 +89,13 @@ Application Shutdown
 ↓
 cleanUp() Method Executed
 
----
+
 
 ## Note
 
 This project uses an in-memory ArrayList to simulate database operations. The goal of the project is to understand Spring Core concepts and Dependency Injection rather than implement a production-ready CRUD application.
 
----
+
 
 ## Future Improvements
 
