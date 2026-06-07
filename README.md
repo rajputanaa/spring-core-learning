@@ -1,5 +1,7 @@
 # Spring Core Learning Project
 
+
+
 ## Overview
 
 This repository was created to learn and practice the fundamental concepts of the Spring Framework before moving on to Spring Boot development.
@@ -7,6 +9,7 @@ This repository was created to learn and practice the fundamental concepts of th
 The project demonstrates how Spring manages objects using the IoC (Inversion of Control) Container and how Dependency Injection helps create loosely coupled applications.
 
 A simple user management flow is implemented using a layered architecture consisting of Controller, Service, Repository, and a simulated Database layer.
+
 
 
 
@@ -23,6 +26,7 @@ A simple user management flow is implemented using a layered architecture consis
 * `@Repository`
 * Bean Lifecycle (`initMethod`, `destroyMethod`)
 * Layered Architecture
+
 
 
 ## Project Structure
@@ -45,6 +49,7 @@ src/main/java
     ├── AppConfig.java
     └── MainApp.java
 ```
+
 
 ### Layer Responsibilities
 
@@ -88,6 +93,20 @@ Users Retrieved
 Application Shutdown
 ↓
 cleanUp() Method Executed
+
+
+
+## Sample Output
+
+
+db Connected (Simulated)
+
+User added : Alice
+User added : Bob
+
+All User: [Alice, Bob]
+
+DB Disconnected (Simulated)
 
 
 
