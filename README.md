@@ -25,32 +25,35 @@ A simple user management flow is implemented using a layered architecture consis
 * Layered Architecture
 
 ---
-
 ## Project Structure
 
-Controller → Service → Repository → Database (Simulated)
+```text
+src/main/java
+└── com.example.config
+    ├── controller
+    │   └── UserController.java
+    │
+    ├── service
+    │   └── UserService.java
+    │
+    ├── repository
+    │   └── UserRepository.java
+    │
+    ├── db
+    │   └── DatabaseConnection.java
+    │
+    ├── AppConfig.java
+    └── MainApp.java
+```
 
-### Layers
+### Layer Responsibilities
 
-**Controller Layer**
+* **Controller Layer** → Handles user requests and responses.
+* **Service Layer** → Contains business logic.
+* **Repository Layer** → Handles data access operations.
+* **Database Layer** → Simulates database operations using an in-memory ArrayList.
+* **Configuration Layer** → Configures Spring beans and component scanning.
 
-* Handles user requests.
-* Interacts with the Service layer.
-
-**Service Layer**
-
-* Contains business logic.
-* Delegates data operations to the Repository layer.
-
-**Repository Layer**
-
-* Handles data access operations.
-* Communicates with the Database layer.
-
-**Database Layer**
-
-* Simulated using an in-memory ArrayList.
-* Demonstrates bean lifecycle management.
 
 ---
 
@@ -60,18 +63,9 @@ Controller → Service → Repository → Database (Simulated)
 * Spring Framework 7
 * Maven
 
----
-
-## Bean Lifecycle Demonstration
-
-The `DatabaseConnection` bean demonstrates:
-
-1. Bean Creation
-2. Initialization using `initMethod`
-3. Runtime Usage
-4. Destruction using `destroyMethod`
 
 ---
+
 
 ## Sample Execution Flow
 
